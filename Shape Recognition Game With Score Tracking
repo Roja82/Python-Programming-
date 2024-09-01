@@ -1,0 +1,22 @@
+import random import time
+# List of shapes
+SHAPES = ["circle", "square", "triangle"]
+# Initialize score score = 0
+# Game instructions
+print("Welcome to the Shape Recognition Game!")
+print("Identify the shape displayed by entering 'c' for circle, 's' for square, or 't' for triangle.")
+print("Type 'quit' to exit the game.")
+print()
+# Main game loop while True:
+# Randomly select a shape
+current_shape = random.choice(SHAPES)
+# Display the shape print(f"The shape is:
+{current_shape}")
+# Get user's input
+start_time = time.time() user_input = input("Your answer: ").strip().lower()
+end_time = time.time()
+# Check if the user wants to quit
+if user_input == "quit":
+print(f"Game over! Your final score is:
+{score}")
+break
